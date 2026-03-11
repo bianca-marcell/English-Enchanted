@@ -9,21 +9,30 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
+    <style>
+        body {
+            background-image: url('gforest.webp');
+            background-size: cover;
+            background-position: center;
+        }
+</style>
     <div class="container">
     <Header>
-        <h1 class="pageHeading">Welcome to English Enchanted</h1>
+        <h1 class="pageHeading">✨Welcome to English Enchanted✨</h1>
     </Header>
+
+    <p class="description">Your AI sentence rewriter. Take a chance and Enchant your English.</p>
     
     <main>
         <div class="formContainer">
         <form id="sentenceGenerator">
-            <input type="text" id="userInstructions" placeholder="Enter the sentence you would like to enchant" autofocus required autocomplete="off" class="instructions">
+            <input type="text" id="userSentence" placeholder="Enter the sentence you would like to enchant" autofocus required autocomplete="off" class="instructions">
             <input type="submit" class="submitButton">
             
         </form>
         <div class="hint">For Example: Do you want to go out tonight?</div>
         </div>
-        <div class="sentence hidden" id="generatedSentence"></div>
+        <div class="sentence hidden" id="generatedSentence" style="background-image: url('gforest.webp');"></div>
     </main>
     
     <footer>
