@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Enchanted</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+    <Header>
+        <h1 class="pageHeading">Welcome to English Enchanted</h1>
+    </Header>
+    
+    <main>
+        <div class="formContainer">
+        <form id="sentenceGenerator">
+            <input type="text" id="userInstructions" placeholder="Enter the sentence you would like to enchant" autofocus required autocomplete="off" class="instructions">
+            <input type="submit" class="submitButton">
+            
+        </form>
+        <div class="hint">Eg. Do you want to go out tonight?</div>
+        </div>
+        <div class="sentence hidden" id="generatedSentence"></div>
+    </main>
+    
+    <footer>
+        This project was coded by <a href="https://github.com/bianca-marcell" target="_blank">Marcell</a> and is available on <a href="https://github.com/bianca-marcell/Poem-Generator.git" target="_blank">GitHub</a> and <a href="https://mars-poem-generator.netlify.app/" target="_blank">Netlify</a>
+    </footer>
+    </div>
+    
+    <script src="src/index.js"></script>
+</body>
+</html>
